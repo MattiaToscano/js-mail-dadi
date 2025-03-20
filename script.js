@@ -26,3 +26,23 @@ else {
 
 console.log('Esercizio 2')
 
+//Inizializzo variabile per numero randomico pc e utente.
+ let lancioDadoPC = (Math.floor(Math.random() * 6) + 1);
+ let lancioDadoUtente = (Math.floor(Math.random() * 6) + 1);
+
+
+ //Creo if per check vincitore.
+ if(lancioDadoUtente>lancioDadoPC){
+    //Stampo i numeri generati.
+    console.log(`il tuo numero è ${lancioDadoUtente} il numero del pc è ${lancioDadoPC} hai vinto`);
+ }
+ //Credo else if per check perdente.
+ else if(lancioDadoUtente<lancioDadoPC){
+    //Stampo i numeri generati.
+    console.log(`il tuo numero è ${lancioDadoUtente} il numero del pc è ${lancioDadoPC} hai perso`);
+ }
+
+ //Creo else per check pareggio.
+ else{
+    console.log(`il tuo numero è ${lancioDadoUtente} il numero del pc è ${lancioDadoPC} PAREGGIO`);
+ }
